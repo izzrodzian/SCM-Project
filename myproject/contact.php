@@ -1,5 +1,5 @@
 <?php
-$title = "Contact";
+$title = "User | Contact Us";
 require_once "./template/header.php";
 require_once "./functions/database_functions.php";
 $conn = db_connect();
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $param_email = $email;
             $param_summary = $summary;
 
-            // Attempt to execute the prepared statement
+            // Attempt to execute the prepared statements
             if (mysqli_stmt_execute($stmt)) {
                 // Records created successfully. Redirect to landing page
                 header("location: index.php");
