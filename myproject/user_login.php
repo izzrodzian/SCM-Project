@@ -6,7 +6,7 @@ require_once "./template/header.php";
 <form class="form-horizontal" method="post" action="user_verify.php">
     <h1>User Login</h1>
     <div class="form-group">
-        <label for="name" class="control-label col-md-4">Email</label>
+        <label for="name" class="control-label col-md-4">Name</label>
         <div class="col-md-4">
             <input type="text" name="name" class="form-control">
         </div>
