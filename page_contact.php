@@ -2,6 +2,11 @@
 
 $title = "Contact";
 
+// if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+//     header("location: auth/signin.php");
+//     exit;
+// }
+
 require_once "config/database.php";
 
 $name = $email = $summary = "";
