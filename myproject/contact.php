@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $summary = $input_summary;
     }
 
-    // Check input errors before inserting in database
+    // Check input errors before inserting in database.
     if (empty($name_err) && empty($email_err)) {
         // Prepare an insert statement
         $sql = "INSERT INTO feedback (name, email, summary) VALUES (?, ?, ?)";
