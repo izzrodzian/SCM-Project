@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -23,33 +22,27 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.php">IMAN PUBLICATION</a>
             </div>
 
-            <!--/.navbar-collapse -->
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- link to books.php -->
                     <li><a href="books.php"><span class="glyphicon glyphicon-book"></span>&nbsp; Books</a></li>
-                    <!-- link to books.php -->
-                    <li><a href="category_list.php"><span class="glyphicon glyphicon-book"></span>&nbsp; Category</a>
-                    </li>
-                    <!-- link to publiser_list.php -->
                     <li><a href="publisher_list.php"><span class="glyphicon glyphicon-paperclip"></span>&nbsp;
                             Publisher</a></li>
-                    <!-- link to contacts.php -->
                     <li><a href="contact.php"><span class="glyphicon glyphicon-phone-alt"></span>&nbsp; Contact</a></li>
                     <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp; My Cart</a>
                     </li>
-                    <!-- link to books.php -->
                     <li><a href="user_login.php"><span class="glyphicon glyphicon-book"></span>&nbsp; Login</a></li>
-                    <!-- link to books.php -->
                     <li><a href="user_register.php"><span class="glyphicon glyphicon-book"></span>&nbsp; Register</a>
                     </li>
-                    <!-- link to shopping cart -->
-
+                    <li>
+                        <form class="form-inline" action="search.php" method="GET">
+                            <input class="form-control" type="text" name="search_query" placeholder="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -57,7 +50,6 @@
     <?php
 if (isset($title) && $title == "Index") {
     ?>
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
         <div class="container">
             <h1>Welcome to online IT bookstore</h1>
